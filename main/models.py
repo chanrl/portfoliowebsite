@@ -7,7 +7,7 @@ class Project(models.Model):
     project_title = models.CharField(max_length=200)
     project_content = models.TextField()
     project_published = models.DateTimeField("date published", default=timezone.now())
-    project_image = models.CharField(max_length=200)
+    project_image = models.ImageField(upload_to="main/static/images/",null=True,blank=True)
     
     project_url = models.URLField()
 

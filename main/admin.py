@@ -9,7 +9,7 @@ class ProjectAdmin(admin.ModelAdmin):
         ("Title/date", {"fields": ["project_title", "project_published"]}),
         ("URL", {"fields": ["project_url"]}),
         ("Content", {"fields": ["project_content"]}),
-        ("Image", {"fields":["project_image"]}),
+        ("Image", {"fields":["project_image"]})
         ]
     formfield_overrides = {
         models.TextField: {'widget': TinyMCE()}
