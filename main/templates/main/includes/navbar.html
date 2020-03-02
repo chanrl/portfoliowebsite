@@ -1,10 +1,11 @@
-<nav>
-    <div class="nav-wrapper" style="margin-left:25; margin-right:50">
-      <a href="/" class="brand-logo" style="font-family:monospace;">richardchan.io</a>
+<nav style="height:65px;margin:0;">
+    <div class="nav-wrapper" style="margin-left:25; margin-right:50;">
+	    <a href="/" class="brand-logo" style="left:0%;transform:translateX(0%);">{% load static %}
+		    <img src="{% static 'images/richardchan.png' %}" style="height:65px;"/></a>
 
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/"><strong>Home</strong></a></li>
-        <li><a href="/about"><strong>About</strong></a></li>
+      <ul id="nav-mobile" class="right align">
+        <li><a href="/" style="font-family:monospace;font-size:32;"><strong>Home</strong></a></li>
+        <li><a href="/about" style="font-family:monospace;font-size:32;"><strong>About</strong></a></li>
         <!-- <li><a href="https://www.github.com/chanrl">{% load static %}<img src="{% static 'images/github.jpg' %}" height="42" width="42"></a></li> -->
       </ul>
     </div>

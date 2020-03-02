@@ -1,23 +1,18 @@
 {% extends "main/header.html" %}
 
 {% block content %}
-<div class='text' style="font-size:20;">
-      <br> This website was built using the Django framework and deployed with AWS EC2 and Apache.</p>
-      <li><a href="https://github.com/chanrl/portfoliowebsite">GitHub Repo</a></li>
         
-</div><br>
+<br>
 
   <div class="col s12 m7">
     <div class="card blue-grey darken-1">
       <div class="card-content white-text">
-        <span class="card-title"><strong>BIO</strong></span><br>
-        <p style="font-size:20;">Hey all, I'm Richard and I'm currently working towards a career in Data Science and Services. 
-          I graduated from Galvanize's Data Science Immersive in November 2019 and have passed the AWS Certified Machine Learning Specialty shortly afterwards,
-           and ever since then, I've been working on freelance and personal projects using cloud services (AWS, Azure) 
+        <p class="flow-text">Hey all, I'm Richard and I'm currently working towards a career in Data Science and Services. 
+          I graduated from Galvanize's Data Science Immersive in November 2019 and have passed the AWS Certified Machine Learning Specialty.
+           Ever since becoming licensed, I've been working on freelance and personal projects using cloud services (AWS, Azure) 
            and bringing machine learning applications to life using Python frameworks such as Flask and Django. 
            <br><br>
-           Big data processing is really cool and I am continually learning best practices using AWS Redshift (with the TPC-DS dataset.)
-           Some of the more interesting services I like to work with is Kinesis and Kinesis Data Analytics for real-time streaming data.
+           I'm a constant learner and I'm always testing out new tools and techniques. Some of the more interesting services I've worked with is AWS Kinesis and Kinesis Data Analytics for real-time streaming data.
            <br><br>
            Hopefully my portfolio can give you a 
            better idea of how I can contribute to your needs or your team!</p>
@@ -26,14 +21,14 @@
   </div><br>
 
 <div class="col s12 m7">
-  <div class="card horizontal">
+  <div class="card horizontal blue-grey darken-1">
     <div class="card-image">
       {% load static %}
       <img src={% static "images/toby.jpeg" %}>
     </div>
     <div class="card-stacked">
-      <div class="card-content" style="font-size:20;">
-        <p>When I am not waiting for my Redshift queries or my ML training jobs to finish, this is who I am hanging out with.</p>
+      <div class="card-content white-text" style="font-size:20;">
+        <p class="flow-text">When I am not waiting for my ML training jobs to finish or sifting through my Apache2 error logs, I'm usually hanging out with this guy!</p>
       </div>
       <div class="card-action">
         <a href="https://www.instagram.com/tobyzeusthecorgi">Check out my dog's instagram!</a>
@@ -41,14 +36,5 @@
     </div>
   </div>
 </div>
-
-<br><br>
-<p style="font-size:20;">Contact Info</p>
-<div class="collection">
-  
-    <a href="mailto: richard129chan@gmail.com" class="collection-item">Email</a>
-    <a href="https://www.LinkedIn.com/in/chanrl" class="collection-item">LinkedIn</a>
-    <a href="https://www.github.com/chanrl" class="collection-item">GitHub</a>
-  </div>
 
 {% endblock %}

@@ -1,4 +1,5 @@
 <head>
+    <title>Richard Chan Portfolio</title>
     {% load static %}
     <link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet">
     
@@ -6,19 +7,44 @@
     <link href="{% static 'main/css/materialize.css' %}" rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta prefix="og: http://ogp.me/ns#" meta property='og:title' content='Richard Chan Portfolio'/>
+    <meta prefix="og: http://ogp.me/ns#" meta property='og:image' content='https://richardchan.io/static/images/toby.jpg'/>
+    <meta prefix="og: http://ogp.me/ns#" meta property='og:description' content='Richard Chan Portfolio Website'/>
+    <meta prefix="og: http://ogp.me/ns#" meta property='og:url' content='https://richardchan.io'/>
 </head>
 
 <body>
 
       {% include "main/includes/navbar.html" %}
       
-      <div class ="container">
+      <div class ="container" style="width:auto;margin:0 auto;max-width:100%">
         <br>      
         {% block content %}
         {% endblock %}
       </div>
 
 </body>
+
+<footer class="page-footer blue-grey lighten-2">
+    <div class="container">
+    <div class="row">
+        <div class="col l6 s12">
+        <ul>
+            <li><a href="mailto: richard129chan@gmail.com"><img src="{% static 'images/email.png' %}" style="width:32;height:32px"></a></li>
+	    <li><a href="https://www.LinkedIn.com/in/chanrl"><img src="{% static 'images/li2.png' %}" style="width:32px;height:auto;"></a></li>
+	    <li><a href="https://www.github.com/chanrl"><img src="{% static 'images/github.png' %}" style="width:32px;height:32px"></a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+        This website was built using Django by me and served on an EC2 instance with Apache2
+	<a class="grey-text text-lighten-4 right" href="https://www.github.com/chanrl/portfoliowebsite">Website Code</a>
+        </div>
+    </div>
+</footer>
 
 <script src="{% static "tinymce/js/prism.js" %}"></script>
 <script>M.AutoInit();</script>
